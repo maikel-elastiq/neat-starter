@@ -17,14 +17,8 @@
     {% endif %}
   </head>
   <body>
-    {% include "./partials/navbar.html" %}
-
-    {% include "./partials/hero.html" %}
-
+  
     {{ content | safe }}
-
-    {% include "./partials/footer.html" %}
-
     <script src="/static/js/alpine.js"></script>
 
     {% if path == "home" %}
